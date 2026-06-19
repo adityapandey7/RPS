@@ -1,0 +1,1975 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      RPS Group of Institutions — Best Computer Institute in Dhurwa Ranchi
+    </title>
+    <meta
+      name="description"
+      content="RPS Group of Institutions, Dhurwa Ranchi — Top computer training centre offering BCA, PGDCA, DCA, Tally Prime GST, Python, Java, Shorthand, Typing & more. Two branches. Hindi & English medium."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Hind:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary: #0a2e6e;
+        --accent: #e8b400;
+        --accent2: #e63b2e;
+        --light: #f0f4ff;
+        --white: #ffffff;
+        --gray: #6b7280;
+        --dark: #111827;
+        --green: #16a34a;
+        --card-bg: #ffffff;
+        --border: #e5e7eb;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Hind", sans-serif;
+        color: var(--dark);
+        background: #fff;
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-family: "Baloo 2", sans-serif;
+        line-height: 1.2;
+      }
+
+      /* NAV */
+      nav {
+        background: var(--primary);
+        padding: 0 24px;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+      }
+      .nav-inner {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 64px;
+      }
+      .nav-logo {
+        font-family: "Baloo 2", sans-serif;
+        font-weight: 800;
+        font-size: 1.15rem;
+        color: var(--white);
+        cursor: pointer;
+        line-height: 1.2;
+      }
+      .nav-logo span {
+        color: var(--accent);
+        display: block;
+        font-size: 0.7rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+      .nav-links {
+        display: flex;
+        gap: 4px;
+      }
+      .nav-links button {
+        background: none;
+        border: none;
+        color: rgba(255, 255, 255, 0.85);
+        font-family: "Hind", sans-serif;
+        font-size: 0.9rem;
+        font-weight: 600;
+        padding: 8px 14px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: all 0.2s;
+        letter-spacing: 0.3px;
+      }
+      .nav-links button:hover,
+      .nav-links button.active {
+        background: rgba(255, 255, 255, 0.15);
+        color: var(--accent);
+      }
+      .hamburger {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        padding: 8px;
+      }
+      .hamburger span {
+        width: 24px;
+        height: 2px;
+        background: white;
+        border-radius: 2px;
+        transition: 0.3s;
+      }
+
+      /* PAGES */
+      .page {
+        display: none;
+      }
+      .page.active {
+        display: block;
+      }
+
+      /* HERO */
+      .hero {
+        background: linear-gradient(
+          135deg,
+          var(--primary) 0%,
+          #1a4db3 60%,
+          #0e3a8a 100%
+        );
+        color: white;
+        padding: 72px 24px 60px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: -60px;
+        right: -60px;
+        width: 300px;
+        height: 300px;
+        background: rgba(232, 180, 0, 0.08);
+        border-radius: 50%;
+      }
+      .hero::after {
+        content: "";
+        position: absolute;
+        bottom: -80px;
+        left: -40px;
+        width: 250px;
+        height: 250px;
+        background: rgba(255, 255, 255, 0.04);
+        border-radius: 50%;
+      }
+      .hero-badge {
+        display: inline-block;
+        background: var(--accent);
+        color: var(--primary);
+        font-family: "Baloo 2", sans-serif;
+        font-weight: 700;
+        font-size: 0.78rem;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        padding: 4px 16px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+      }
+      .hero h1 {
+        font-size: clamp(1.8rem, 5vw, 3rem);
+        font-weight: 800;
+        margin-bottom: 16px;
+        color: white;
+        position: relative;
+      }
+      .hero h1 span {
+        color: var(--accent);
+      }
+      .hero p {
+        font-size: 1.05rem;
+        color: rgba(255, 255, 255, 0.85);
+        max-width: 680px;
+        margin: 0 auto 32px;
+      }
+      .hero-tags {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 36px;
+      }
+      .hero-tag {
+        background: rgba(255, 255, 255, 0.12);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        color: white;
+        font-size: 0.82rem;
+        font-weight: 600;
+        padding: 5px 14px;
+        border-radius: 20px;
+      }
+      .cta-group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+      }
+      .btn-primary {
+        background: var(--accent);
+        color: var(--primary);
+        font-family: "Baloo 2", sans-serif;
+        font-weight: 700;
+        font-size: 0.95rem;
+        padding: 12px 28px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.2s;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .btn-primary:hover {
+        background: #d4a200;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 16px rgba(232, 180, 0, 0.4);
+      }
+      .btn-secondary {
+        background: rgba(255, 255, 255, 0.12);
+        color: white;
+        font-family: "Baloo 2", sans-serif;
+        font-weight: 700;
+        font-size: 0.95rem;
+        padding: 12px 28px;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.2s;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .btn-secondary:hover {
+        background: rgba(255, 255, 255, 0.2);
+        transform: translateY(-1px);
+      }
+
+      /* STATS BAR */
+      .stats-bar {
+        background: var(--accent);
+        padding: 20px 24px;
+      }
+      .stats-inner {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+        text-align: center;
+      }
+
+      .stat-num {
+        font-family: "Baloo 2", sans-serif;
+        font-size: 1.8rem;
+        font-weight: 800;
+        color: var(--primary);
+        line-height: 1;
+      }
+      .stat-label {
+        font-size: 0.78rem;
+        font-weight: 600;
+        color: var(--primary);
+        opacity: 0.8;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      /* SECTIONS */
+      .section {
+        padding: 64px 24px;
+      }
+      .section-inner {
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+      .section-alt {
+        background: var(--light);
+      }
+      .section-dark {
+        background: var(--primary);
+        color: white;
+      }
+
+      .section-label {
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: var(--accent2);
+        margin-bottom: 8px;
+      }
+      .section-dark .section-label {
+        color: var(--accent);
+      }
+
+      .section-title {
+        font-size: clamp(1.5rem, 3vw, 2.2rem);
+        font-weight: 800;
+        color: var(--primary);
+        margin-bottom: 12px;
+      }
+      .section-dark .section-title {
+        color: white;
+      }
+
+      .section-sub {
+        color: var(--gray);
+        max-width: 600px;
+        margin-bottom: 40px;
+        font-size: 1rem;
+      }
+      .section-dark .section-sub {
+        color: rgba(255, 255, 255, 0.75);
+      }
+
+      /* WHY CHOOSE */
+      .features-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+      .feature-card {
+        background: white;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 24px;
+        transition: all 0.2s;
+      }
+      .feature-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 24px rgba(10, 46, 110, 0.1);
+        border-color: var(--primary);
+      }
+      .feature-icon {
+        font-size: 2rem;
+        margin-bottom: 12px;
+      }
+      .feature-card h3 {
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--primary);
+        margin-bottom: 8px;
+      }
+      .feature-card p {
+        font-size: 0.88rem;
+        color: var(--gray);
+        line-height: 1.6;
+      }
+
+      /* COURSES PREVIEW */
+      .courses-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 14px;
+      }
+      .course-chip {
+        background: white;
+        border: 2px solid var(--border);
+        border-radius: 10px;
+        padding: 16px 14px;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+      .course-chip:hover {
+        border-color: var(--primary);
+        background: var(--light);
+      }
+      .course-chip .chip-icon {
+        font-size: 1.5rem;
+        margin-bottom: 6px;
+      }
+      .course-chip h4 {
+        font-size: 0.85rem;
+        font-weight: 700;
+        color: var(--primary);
+      }
+      .course-chip p {
+        font-size: 0.75rem;
+        color: var(--gray);
+        margin-top: 2px;
+      }
+
+      /* BRANCHES */
+      .branches-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+      }
+      .branch-card {
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 16px;
+        padding: 32px;
+      }
+      .branch-tag {
+        display: inline-block;
+        background: var(--accent);
+        color: var(--primary);
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        padding: 3px 12px;
+        border-radius: 12px;
+        margin-bottom: 16px;
+      }
+      .branch-card h3 {
+        font-size: 1.2rem;
+        font-weight: 800;
+        color: white;
+        margin-bottom: 16px;
+      }
+      .branch-detail {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 12px;
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.8);
+        align-items: flex-start;
+      }
+      .branch-detail .icon {
+        font-size: 1rem;
+        flex-shrink: 0;
+        margin-top: 1px;
+      }
+      .branch-map {
+        margin-top: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .branch-map iframe {
+        width: 100%;
+        height: 200px;
+        display: block;
+        border: none;
+      }
+      .btn-wa {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: #25d366;
+        color: white;
+        font-family: "Baloo 2", sans-serif;
+        font-weight: 700;
+        font-size: 0.9rem;
+        padding: 10px 20px;
+        border-radius: 8px;
+        text-decoration: none;
+        margin-top: 16px;
+        transition: all 0.2s;
+        border: none;
+        cursor: pointer;
+      }
+      .btn-wa:hover {
+        background: #1db954;
+        transform: translateY(-1px);
+      }
+
+      /* CTA STRIP */
+      .cta-strip {
+        background: var(--accent2);
+        padding: 48px 24px;
+        text-align: center;
+      }
+      .cta-strip h2 {
+        font-size: 1.8rem;
+        font-weight: 800;
+        color: white;
+        margin-bottom: 8px;
+      }
+      .cta-strip p {
+        color: rgba(255, 255, 255, 0.9);
+        margin-bottom: 24px;
+      }
+      .cta-strip .cta-group {
+        justify-content: center;
+      }
+
+      /* COURSES PAGE */
+      .page-hero {
+        background: linear-gradient(135deg, var(--primary) 0%, #1a4db3 100%);
+        color: white;
+        padding: 56px 24px 48px;
+        text-align: center;
+      }
+      .page-hero h1 {
+        font-size: clamp(1.6rem, 4vw, 2.4rem);
+        font-weight: 800;
+        color: white;
+        margin-bottom: 12px;
+      }
+      .page-hero p {
+        color: rgba(255, 255, 255, 0.85);
+        max-width: 650px;
+        margin: 0 auto;
+      }
+
+      .course-category-title {
+        font-size: 1.3rem;
+        font-weight: 800;
+        color: var(--primary);
+        padding: 16px 0 16px;
+        border-bottom: 3px solid var(--accent);
+        margin-bottom: 24px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .courses-list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 48px;
+      }
+      .course-card {
+        background: white;
+        border: 1px solid var(--border);
+        border-left: 4px solid var(--primary);
+        border-radius: 10px;
+        padding: 24px;
+        transition: all 0.2s;
+      }
+      .course-card:hover {
+        box-shadow: 0 4px 20px rgba(10, 46, 110, 0.1);
+        transform: translateX(4px);
+      }
+      .course-card-header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 10px;
+      }
+      .course-card h3 {
+        font-size: 1.05rem;
+        font-weight: 700;
+        color: var(--primary);
+      }
+      .course-badge {
+        background: var(--light);
+        color: var(--primary);
+        font-size: 0.72rem;
+        font-weight: 700;
+        padding: 3px 10px;
+        border-radius: 12px;
+        white-space: nowrap;
+        border: 1px solid var(--border);
+      }
+      .course-card p {
+        font-size: 0.9rem;
+        color: var(--gray);
+        line-height: 1.7;
+      }
+
+      /* ABOUT PAGE */
+      .about-intro-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 48px;
+        align-items: center;
+      }
+      .about-text h2 {
+        font-size: 1.8rem;
+        font-weight: 800;
+        color: var(--primary);
+        margin-bottom: 16px;
+      }
+      .about-text p {
+        color: var(--gray);
+        line-height: 1.8;
+        margin-bottom: 16px;
+      }
+      .about-visual {
+        background: linear-gradient(135deg, var(--primary), #1a4db3);
+        border-radius: 16px;
+        padding: 40px;
+        color: white;
+        text-align: center;
+      }
+      .about-visual .big-year {
+        font-family: "Baloo 2", sans-serif;
+        font-size: 5rem;
+        font-weight: 800;
+        color: var(--accent);
+        line-height: 1;
+      }
+      .about-visual p {
+        color: rgba(255, 255, 255, 0.85);
+        font-size: 1rem;
+      }
+
+      .values-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+      }
+      .value-card {
+        background: white;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 20px;
+      }
+      .value-card h4 {
+        font-size: 0.95rem;
+        font-weight: 700;
+        color: var(--primary);
+        margin-bottom: 6px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .value-card p {
+        font-size: 0.85rem;
+        color: var(--gray);
+      }
+
+      .courses-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 16px;
+      }
+      .courses-tags span {
+        background: var(--light);
+        color: var(--primary);
+        font-size: 0.82rem;
+        font-weight: 600;
+        padding: 5px 14px;
+        border-radius: 20px;
+        border: 1px solid var(--border);
+      }
+
+      /* CONTACT PAGE */
+      .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+      }
+      .contact-card {
+        background: white;
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        overflow: hidden;
+      }
+      .contact-card-header {
+        background: var(--primary);
+        padding: 20px 24px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .contact-card-header h3 {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: white;
+      }
+      .contact-card-header .branch-num {
+        background: var(--accent);
+        color: var(--primary);
+        font-weight: 800;
+        font-size: 0.85rem;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .contact-card-body {
+        padding: 24px;
+      }
+      .contact-detail {
+        display: flex;
+        gap: 12px;
+        align-items: flex-start;
+        margin-bottom: 16px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid var(--border);
+      }
+      .contact-detail:last-of-type {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+      .contact-detail .cd-icon {
+        font-size: 1.2rem;
+        flex-shrink: 0;
+        margin-top: 2px;
+      }
+      .contact-detail h4 {
+        font-size: 0.78rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        color: var(--gray);
+        margin-bottom: 2px;
+      }
+      .contact-detail p {
+        font-size: 0.92rem;
+        color: var(--dark);
+      }
+      .contact-detail a {
+        color: var(--primary);
+        font-weight: 600;
+        text-decoration: none;
+      }
+      .contact-detail a:hover {
+        color: var(--accent2);
+      }
+
+      .map-embed {
+        margin-top: 16px;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .map-embed iframe {
+        width: 100%;
+        height: 220px;
+        display: block;
+        border: none;
+      }
+
+      .demo-banner {
+        background: linear-gradient(135deg, var(--green), #15803d);
+        border-radius: 16px;
+        padding: 36px;
+        text-align: center;
+        color: white;
+        margin-top: 32px;
+      }
+      .demo-banner h3 {
+        font-size: 1.4rem;
+        font-weight: 800;
+        margin-bottom: 8px;
+      }
+      .demo-banner p {
+        color: rgba(255, 255, 255, 0.9);
+        margin-bottom: 20px;
+      }
+
+      /* FOOTER */
+      footer {
+        background: var(--dark);
+        color: rgba(255, 255, 255, 0.7);
+        padding: 48px 24px 24px;
+      }
+      .footer-inner {
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+      .footer-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 40px;
+        margin-bottom: 40px;
+      }
+      .footer-logo {
+        font-family: "Baloo 2", sans-serif;
+        font-size: 1.1rem;
+        font-weight: 800;
+        color: white;
+        margin-bottom: 12px;
+      }
+      .footer-logo span {
+        color: var(--accent);
+      }
+      .footer-brand p {
+        font-size: 0.88rem;
+        line-height: 1.7;
+      }
+      .footer-col h4 {
+        font-family: "Baloo 2", sans-serif;
+        font-weight: 700;
+        color: white;
+        margin-bottom: 16px;
+        font-size: 0.9rem;
+        letter-spacing: 0.5px;
+      }
+      .footer-col ul {
+        list-style: none;
+      }
+      .footer-col ul li {
+        margin-bottom: 8px;
+        font-size: 0.85rem;
+      }
+      .footer-col ul li a {
+        color: rgba(255, 255, 255, 0.65);
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .footer-col ul li a:hover {
+        color: var(--accent);
+      }
+      .footer-bottom {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding-top: 20px;
+        font-size: 0.82rem;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.4);
+      }
+
+      /* MOBILE NAV DRAWER */
+      .mobile-menu {
+        display: none;
+        flex-direction: column;
+        background: var(--primary);
+        padding: 8px 16px 16px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .mobile-menu.open {
+        display: flex;
+      }
+      .mobile-menu button {
+        background: none;
+        border: none;
+        color: rgba(255, 255, 255, 0.85);
+        font-family: "Hind", sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 12px 8px;
+        text-align: left;
+        cursor: pointer;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .mobile-menu button:hover {
+        color: var(--accent);
+      }
+
+      @media (max-width: 768px) {
+        .nav-links {
+          display: none;
+        }
+        .hamburger {
+          display: flex;
+        }
+        .stats-inner {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .features-grid {
+          grid-template-columns: 1fr;
+        }
+        .courses-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .branches-grid {
+          grid-template-columns: 1fr;
+        }
+        .about-intro-grid {
+          grid-template-columns: 1fr;
+        }
+        .values-grid {
+          grid-template-columns: 1fr;
+        }
+        .contact-grid {
+          grid-template-columns: 1fr;
+        }
+        .footer-grid {
+          grid-template-columns: 1fr;
+          gap: 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <div class="nav-inner">
+        <div class="nav-logo" onclick="navigate('home')">
+          RPS Group of Institutions
+          <span>Computer Centre • Dhurwa, Ranchi</span>
+        </div>
+        <div class="nav-links">
+          <button onclick="navigate('home')" id="nav-home" class="active">
+            Home
+          </button>
+          <button onclick="navigate('courses')" id="nav-courses">
+            Courses
+          </button>
+          <button onclick="navigate('about')" id="nav-about">About Us</button>
+          <button onclick="navigate('contact')" id="nav-contact">
+            Contact
+          </button>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()" id="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+      <div class="mobile-menu" id="mobile-menu">
+        <button
+          onclick="
+            navigate('home');
+            toggleMenu();
+          "
+        >
+          🏠 Home
+        </button>
+        <button
+          onclick="
+            navigate('courses');
+            toggleMenu();
+          "
+        >
+          📚 Courses
+        </button>
+        <button
+          onclick="
+            navigate('about');
+            toggleMenu();
+          "
+        >
+          🏛 About Us
+        </button>
+        <button
+          onclick="
+            navigate('contact');
+            toggleMenu();
+          "
+        >
+          📞 Contact
+        </button>
+      </div>
+    </nav>
+
+    <!-- ===================== HOME PAGE ===================== -->
+    <div class="page active" id="page-home">
+      <div class="hero">
+        <div class="hero-badge">Established 2013 • Dhurwa, Ranchi</div>
+        <h1>Best Computer Institute in<br /><span>Dhurwa, Ranchi</span></h1>
+        <p>
+          RPS Group of Institutions — 20+ job-oriented computer courses. Hindi &
+          English medium. Two branches. Experienced faculty. Government job
+          focused training.
+        </p>
+        <div class="hero-tags">
+          <span class="hero-tag">✅ BCA • DCA • ADCA • PGDCA</span>
+          <span class="hero-tag">✅ Tally Prime GST</span>
+          <span class="hero-tag">✅ Python • Java • C++ • SQL</span>
+          <span class="hero-tag">✅ Shorthand & Typing</span>
+          <span class="hero-tag">✅ 11th & 12th CS Tuition</span>
+        </div>
+        <div class="cta-group">
+          <a
+            href="https://wa.me/917549521981?text=I+want+to+enquire+about+courses+at+RPS+Anand+Market"
+            class="btn-primary"
+            >💬 WhatsApp Branch 1</a
+          >
+          <a
+            href="https://wa.me/919546079914?text=I+want+to+enquire+about+courses+at+RPS+JP+Market"
+            class="btn-secondary"
+            >💬 WhatsApp Branch 2</a
+          >
+        </div>
+      </div>
+
+      <div class="stats-bar">
+        <div class="stats-inner">
+          <div class="stat-item">
+            <div class="stat-num">10+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">20+</div>
+            <div class="stat-label">Courses Offered</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">2</div>
+            <div class="stat-label">Branches in Dhurwa</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">500+</div>
+            <div class="stat-label">Students Trained</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section section-alt">
+        <div class="section-inner">
+          <div class="section-label">Why Choose Us</div>
+          <h2 class="section-title">
+            Why Students Choose RPS Computer Centre in Ranchi
+          </h2>
+          <p class="section-sub">
+            From diploma courses to government job preparation — everything
+            under one roof at Dhurwa, Ranchi.
+          </p>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon">🏆</div>
+              <h3>Established & Trusted Since 2013</h3>
+              <p>
+                Over 10 years of training students in Dhurwa, Ranchi for
+                government and private sector jobs in Jharkhand.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">💻</div>
+              <h3>20+ Courses — Broadest Curriculum</h3>
+              <p>
+                From BCA and PGDCA to Tally Prime GST, Python, Java, Shorthand,
+                and Typing — widest course catalogue in Dhurwa Ranchi.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">🗣</div>
+              <h3>Hindi & English Medium</h3>
+              <p>
+                All courses taught in both Hindi and English medium. Ideal for
+                local students and government exam aspirants across Jharkhand.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">🕐</div>
+              <h3>Morning & Evening Batches</h3>
+              <p>
+                Flexible batch timings for school students, college students,
+                and working professionals in Ranchi.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">📍</div>
+              <h3>Two Convenient Branches</h3>
+              <p>
+                Anand Market Sector 1 and JP Market — both in Dhurwa, Ranchi,
+                easily reachable by auto and bus.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">💼</div>
+              <h3>Placement Support</h3>
+              <p>
+                Active placement assistance for government and private sector
+                jobs — accounts, data entry, steno, and office roles in Ranchi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-inner">
+          <div class="section-label">Our Courses</div>
+          <h2 class="section-title">
+            Computer Courses in Ranchi — All Categories
+          </h2>
+          <p class="section-sub">
+            Job-oriented computer training in Dhurwa Ranchi. All courses
+            available in Hindi & English medium with practical lab sessions.
+          </p>
+          <div class="courses-grid">
+            <div class="course-chip" onclick="navigate('courses')">
+              <div class="chip-icon">🎓</div>
+              <h4>BCA Course</h4>
+              <p>3-Year Degree</p>
+            </div>
+            <div class="course-chip" onclick="navigate('courses')">
+              <div class="chip-icon">📋</div>
+              <h4>DCA Course</h4>
+              <p>6-Month Diploma</p>
+            </div>
+            <div class="course-chip" onclick="navigate('courses')">
+              <div class="chip-icon">📊</div>
+              <h4>ADCA Course</h4>
+              <p>1-Year Advanced</p>
+            </div>
+            <div class="course-chip" onclick="navigate('courses')">
+              <div class="chip-icon">🏅</div>
+              <h4>PGDCA Course</h4>
+              <p>PG Level Diploma</p>
+            </div>
+            <div class="course-chip" onclick="navigate('courses')">
+              <div class="chip-icon">💰</div>
+              <h4>Tally Prime GST</h4>
+              <p>Accounting Course</p>
+            </div>
+            <div class="course-chip" onclick="navigate('courses')">
+              <div class="chip-icon">🐍</div>
+              <h4>Python Course</h4>
+              <p>Programming</p>
+            </div>
+            <div class="course-chip" onclick="navigate('courses')">
+              <div class="chip-icon">☕</div>
+              <h4>Java Course</h4>
+              <p>Programming</p>
+            </div>
+            <div class="course-chip" onclick="navigate('courses')">
+              <div class="chip-icon">⌨️</div>
+              <h4>Typing Course</h4>
+              <p>Hindi & English</p>
+            </div>
+          </div>
+          <div style="text-align: center; margin-top: 28px">
+            <button class="btn-primary" onclick="navigate('courses')">
+              View All 16 Courses →
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="section section-dark">
+        <div class="section-inner">
+          <div class="section-label">Our Branches</div>
+          <h2 class="section-title">Two Branches in Dhurwa, Ranchi</h2>
+          <p class="section-sub">
+            Visit either branch for a free demo class. Same day admission
+            available. Morning & evening batches at both locations.
+          </p>
+          <div class="branches-grid">
+            <div class="branch-card">
+              <div class="branch-tag">Branch 1</div>
+              <h3>Anand Market, Sector 1</h3>
+              <div class="branch-detail">
+                <span class="icon">📍</span
+                ><span
+                  >Anand Market, Sector 1, Saily City Road, Near Hanuman Mandir,
+                  Dhurwa, Ranchi, Jharkhand 834004</span
+                >
+              </div>
+              <div class="branch-detail">
+                <span class="icon">📞</span><span>7549521981</span>
+              </div>
+              <div class="branch-detail">
+                <span class="icon">🕐</span
+                ><span
+                  >Mon–Sat: 8:00 AM – 7:00 PM | Sun: 10:00 AM – 2:00 PM</span
+                >
+              </div>
+              <div class="branch-map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3663.7!2d85.2938!3d23.3441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDIwJzM4LjgiTiA4NcKwMTcnMzguMiJF!5e0!3m2!1sen!2sin!4v1234567890"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+              <a
+                href="https://wa.me/917549521981?text=I+want+to+enquire+about+courses"
+                class="btn-wa"
+                >💬 WhatsApp Now</a
+              >
+            </div>
+            <div class="branch-card">
+              <div class="branch-tag">Branch 2</div>
+              <h3>JP Market, CTI Colony</h3>
+              <div class="branch-detail">
+                <span class="icon">📍</span
+                ><span
+                  >JP Market Road, CTI Colony, Sector 4, Near Saraswati School,
+                  Dhurwa, Ranchi, Jharkhand 834004</span
+                >
+              </div>
+              <div class="branch-detail">
+                <span class="icon">📞</span><span>9546079914</span>
+              </div>
+              <div class="branch-detail">
+                <span class="icon">🕐</span
+                ><span
+                  >Mon–Sat: 8:00 AM – 7:00 PM | Sun: 10:00 AM – 2:00 PM</span
+                >
+              </div>
+              <div class="branch-map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3663.9!2d85.2850!3d23.3410!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDIwJzI3LjYiTiA4NcKwMTcnMDYuMCJF!5e0!3m2!1sen!2sin!4v1234567891"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+              <a
+                href="https://wa.me/919546079914?text=I+want+to+enquire+about+courses"
+                class="btn-wa"
+                >💬 WhatsApp Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-strip">
+        <h2>🎯 Get Government Job in the Shortest Time</h2>
+        <p>
+          Free demo class available. Same day admission. Morning & evening
+          batches in Dhurwa, Ranchi.
+        </p>
+        <div class="cta-group">
+          <a
+            href="https://wa.me/917549521981"
+            class="btn-primary"
+            style="background: white; color: #e63b2e"
+            >💬 Branch 1 — 7549521981</a
+          >
+          <a
+            href="https://wa.me/919546079914"
+            class="btn-primary"
+            style="background: white; color: #e63b2e"
+            >💬 Branch 2 — 9546079914</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== COURSES PAGE ===================== -->
+    <div class="page" id="page-courses">
+      <div class="page-hero">
+        <h1>Computer Courses in Ranchi — RPS Group of Institutions, Dhurwa</h1>
+        <p>
+          20+ job-oriented computer courses in Dhurwa Ranchi. Hindi & English
+          medium. Practical lab training. Placement support for government and
+          private jobs in Jharkhand.
+        </p>
+      </div>
+
+      <div class="section">
+        <div class="section-inner">
+          <div class="course-category-title">
+            🎓 Degree & Diploma Courses in Ranchi
+          </div>
+          <div class="courses-list">
+            <div class="course-card">
+              <div class="course-card-header">
+                <h3>BCA Course in Ranchi | Computer Degree Classes Dhurwa</h3>
+                <span class="course-badge">3 Years</span>
+              </div>
+              <p>
+                Bachelor of Computer Applications coaching in Ranchi at RPS
+                Group of Institutions, Dhurwa. 3-year degree-level programme
+                covering programming, database management, networking, and
+                software development. Best BCA coaching institute near Anand
+                Market Sector 1 Ranchi. Hindi & English medium. Experienced
+                faculty. Practical lab training with placement support for IT
+                and government jobs in Jharkhand.
+              </p>
+            </div>
+            <div class="course-card">
+              <div class="course-card-header">
+                <h3>DCA Course in Ranchi | Computer Diploma Classes Dhurwa</h3>
+                <span class="course-badge">6 Months</span>
+              </div>
+              <p>
+                Diploma in Computer Applications in Ranchi at RPS Dhurwa.
+                6-month job-ready course covering MS Office, internet, Tally
+                basics, C language, and computer fundamentals. Best DCA
+                institute near Saily City Road Dhurwa Ranchi. Ideal for students
+                seeking data entry, office assistant, and clerical jobs in
+                Ranchi and Jharkhand.
+              </p>
+            </div>
+            <div class="course-card">
+              <div class="course-card-header">
+                <h3>
+                  ADCA Course in Ranchi | Advanced Computer Diploma Dhurwa
+                </h3>
+                <span class="course-badge">1 Year</span>
+              </div>
+              <p>
+                Advanced Diploma in Computer Applications in Ranchi at RPS Group
+                of Institutions Dhurwa. 1-year advanced course covering
+                programming, DTP, Tally, and office applications. Best ADCA
+                institute near Anand Market Ranchi. Hindi & English medium.
+                Placement support for government and private sector jobs in
+                Jharkhand after course completion.
+              </p>
+            </div>
+            <div class="course-card">
+              <div class="course-card-header">
+                <h3>PGDCA Course in Ranchi | PG Computer Diploma Dhurwa</h3>
+                <span class="course-badge">1 Year</span>
+              </div>
+              <p>
+                Post Graduate Diploma in Computer Applications in Ranchi at RPS
+                Dhurwa. 1-year PG-level course covering advanced computing,
+                database management, networking, and project work. Best PGDCA
+                institute near Saily City Road Sector 1 Ranchi. Ideal for
+                graduates targeting government jobs, bank exams, and private
+                sector IT roles in Jharkhand.
+              </p>
+            </div>
+          </div>
+
+          <div class="course-category-title">
+            💰 Accounting & Office Courses in Ranchi
+          </div>
+          <div class="courses-list">
+            <div class="course-card" style="border-left-color: var(--accent)">
+              <div class="course-card-header">
+                <h3>
+                  Tally Prime GST Course in Ranchi | Accounting Classes Dhurwa
+                </h3>
+                <span class="course-badge">3 Months</span>
+              </div>
+              <p>
+                Tally Prime with GST course in Ranchi at RPS Group of
+                Institutions Dhurwa. Learn Tally Prime, GST filing, accounting,
+                inventory management, and payroll processing. Best Tally Prime
+                GST institute near Anand Market Sector 1 Ranchi. Most in-demand
+                course for accounts and finance jobs in Ranchi and Jharkhand.
+                Morning and evening batches available.
+              </p>
+            </div>
+            <div class="course-card" style="border-left-color: var(--accent)">
+              <div class="course-card-header">
+                <h3>
+                  DTP Course in Ranchi | Desktop Publishing Classes Dhurwa
+                </h3>
+                <span class="course-badge">3 Months</span>
+              </div>
+              <p>
+                Desktop Publishing DTP course in Ranchi at RPS Group of
+                Institutions Dhurwa. Covers CorelDRAW, Photoshop, PageMaker, and
+                print layout design. Best DTP training institute near Anand
+                Market Sector 1 Dhurwa Ranchi. Ideal for students seeking
+                graphic design and printing jobs in Ranchi and Jharkhand.
+                Practical project-based training.
+              </p>
+            </div>
+            <div class="course-card" style="border-left-color: var(--accent)">
+              <div class="course-card-header">
+                <h3>DOP Course in Ranchi | Office Practice Classes Dhurwa</h3>
+                <span class="course-badge">6 Months</span>
+              </div>
+              <p>
+                Diploma in Office Practice DOP course in Ranchi at RPS Group of
+                Institutions Dhurwa. Covers office correspondence, filing,
+                typing, and administrative procedures. Best DOP institute near
+                Saily City Road Dhurwa Ranchi. Government job-focused course
+                ideal for candidates preparing for clerical and office assistant
+                posts in Jharkhand.
+              </p>
+            </div>
+          </div>
+
+          <div class="course-category-title">
+            💻 Programming Courses in Ranchi
+          </div>
+          <div class="courses-list">
+            <div class="course-card" style="border-left-color: #7c3aed">
+              <div class="course-card-header">
+                <h3>Python Course in Ranchi | Programming Classes Dhurwa</h3>
+                <span class="course-badge">3 Months</span>
+              </div>
+              <p>
+                Python programming classes in Ranchi at RPS Group of
+                Institutions Dhurwa. Covers Python basics, data types,
+                functions, OOP, file handling, and mini projects. Best Python
+                course near Saily City Road Dhurwa Ranchi. Suitable for BCA,
+                PGDCA students and government exam aspirants. Practical lab
+                sessions with experienced faculty.
+              </p>
+            </div>
+            <div class="course-card" style="border-left-color: #7c3aed">
+              <div class="course-card-header">
+                <h3>Java Course in Ranchi | Programming Classes Dhurwa</h3>
+                <span class="course-badge">3 Months</span>
+              </div>
+              <p>
+                Java programming course in Ranchi at RPS Group of Institutions
+                Dhurwa. Covers core Java, OOP concepts, exception handling,
+                collections, and project work. Best Java coaching institute near
+                Anand Market Sector 1 Ranchi. Ideal for BCA and PGDCA students.
+                Experienced faculty with practical lab training and placement
+                support in Jharkhand.
+              </p>
+            </div>
+            <div class="course-card" style="border-left-color: #7c3aed">
+              <div class="course-card-header">
+                <h3>C and C++ Course in Ranchi | Programming Classes Dhurwa</h3>
+                <span class="course-badge">3 Months</span>
+              </div>
+              <p>
+                C and C++ programming classes in Ranchi at RPS Group of
+                Institutions Dhurwa. Covers fundamentals, pointers, arrays,
+                functions, and object-oriented programming. Best C C++ coaching
+                centre near Saily City Road Sector 1 Dhurwa Ranchi. Foundation
+                course for all computer diploma and BCA students. Hindi &
+                English medium with experienced faculty.
+              </p>
+            </div>
+            <div class="course-card" style="border-left-color: #7c3aed">
+              <div class="course-card-header">
+                <h3>SQL Course in Ranchi | Database Classes Dhurwa</h3>
+                <span class="course-badge">2 Months</span>
+              </div>
+              <p>
+                SQL database course in Ranchi at RPS Group of Institutions
+                Dhurwa. Covers SQL queries, joins, stored procedures, and
+                database design. Best SQL classes near Anand Market Dhurwa
+                Ranchi. Practical training on live databases. Ideal for DCA,
+                ADCA, BCA, and PGDCA students preparing for IT and government
+                jobs in Jharkhand.
+              </p>
+            </div>
+            <div class="course-card" style="border-left-color: #7c3aed">
+              <div class="course-card-header">
+                <h3>
+                  C# and .NET Course in Ranchi | Programming Classes Dhurwa
+                </h3>
+                <span class="course-badge">3 Months</span>
+              </div>
+              <p>
+                C# and .NET programming course in Ranchi at RPS Group of
+                Institutions Dhurwa. Covers C# language, .NET framework, Windows
+                application development, and project work. Best C# .NET coaching
+                institute near Saily City Road Sector 1 Ranchi. Advanced course
+                for PGDCA and BCA students seeking software development jobs in
+                Jharkhand.
+              </p>
+            </div>
+          </div>
+
+          <div class="course-category-title">
+            🏛 Government Job Focused Courses in Ranchi
+          </div>
+          <div class="courses-list">
+            <div class="course-card" style="border-left-color: var(--green)">
+              <div class="course-card-header">
+                <h3>
+                  Shorthand Course in Ranchi | Steno Classes Hindi English
+                  Dhurwa
+                </h3>
+                <span class="course-badge">6 Months</span>
+              </div>
+              <p>
+                Shorthand course in Ranchi for Hindi and English stenography at
+                RPS Group of Institutions Dhurwa. Covers Pitman shorthand, speed
+                building, and transcription practice. Best shorthand institute
+                near Anand Market Sector 1 Ranchi. Ideal for stenographer posts
+                in government departments, courts, and PSUs in Jharkhand.
+                Morning and evening batches.
+              </p>
+            </div>
+            <div class="course-card" style="border-left-color: var(--green)">
+              <div class="course-card-header">
+                <h3>
+                  Typing Course in Ranchi | Hindi English Typing Classes Dhurwa
+                </h3>
+                <span class="course-badge">3 Months</span>
+              </div>
+              <p>
+                Hindi and English typing classes in Ranchi at RPS Group of
+                Institutions Dhurwa. Hindi typing in Mangal and Kruti Dev font
+                for SSC, railways, and Jharkhand state government exams. English
+                typing for competitive exams. Best typing institute near Saily
+                City Road Sector 1 Dhurwa Ranchi. Speed and accuracy focused
+                training with experienced faculty.
+              </p>
+            </div>
+            <div class="course-card" style="border-left-color: var(--green)">
+              <div class="course-card-header">
+                <h3>Steno Course in Ranchi | Stenography Classes Dhurwa</h3>
+                <span class="course-badge">6 Months</span>
+              </div>
+              <p>
+                Stenography steno course in Ranchi at RPS Group of Institutions
+                Dhurwa. Combines Hindi and English shorthand with typing for
+                government exam preparation. Covers steno skills for clerical,
+                court reporter, and secretarial posts in Jharkhand. Best steno
+                training institute near Saily City Road Sector 1 Dhurwa Ranchi.
+                Flexible batch timings.
+              </p>
+            </div>
+            <div class="course-card" style="border-left-color: var(--green)">
+              <div class="course-card-header">
+                <h3>
+                  11th 12th Computer Science Tuition in Ranchi | CS Coaching
+                  Dhurwa
+                </h3>
+                <span class="course-badge">Board Level</span>
+              </div>
+              <p>
+                Computer Science tuition for Class 11 and Class 12 in Ranchi at
+                RPS Group of Institutions Dhurwa. Covers Python, C++, database
+                concepts, networking, and practical files for CBSE and JAC
+                board. Best computer science tuition near Anand Market Sector 1
+                Dhurwa Ranchi. Board exam-focused teaching with experienced
+                faculty and lab practice.
+              </p>
+            </div>
+          </div>
+
+          <div
+            style="
+              background: var(--light);
+              border-radius: 16px;
+              padding: 32px;
+              text-align: center;
+              margin-top: 16px;
+            "
+          >
+            <h3
+              style="
+                font-size: 1.3rem;
+                font-weight: 800;
+                color: var(--primary);
+                margin-bottom: 8px;
+              "
+            >
+              Free Demo Class Available at Both Branches
+            </h3>
+            <p style="color: var(--gray); margin-bottom: 20px">
+              Not sure which course is right for you? Call or WhatsApp — our
+              faculty will guide you to the best course for your goals and
+              budget.
+            </p>
+            <div class="cta-group" style="justify-content: center">
+              <a href="https://wa.me/917549521981" class="btn-primary"
+                >💬 WhatsApp Branch 1 — 7549521981</a
+              >
+              <a
+                href="https://wa.me/919546079914"
+                class="btn-primary"
+                style="background: var(--primary)"
+                >💬 WhatsApp Branch 2 — 9546079914</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== ABOUT PAGE ===================== -->
+    <div class="page" id="page-about">
+      <div class="page-hero">
+        <h1>
+          About RPS Group of Institutions — Computer Institute Dhurwa Ranchi
+        </h1>
+        <p>
+          Trusted computer training centre in Dhurwa, Ranchi since 2013. 10+
+          years. 500+ students trained. Two branches. 20+ courses.
+        </p>
+      </div>
+
+      <div class="section">
+        <div class="section-inner">
+          <div class="about-intro-grid">
+            <div class="about-text">
+              <div class="section-label">Who We Are</div>
+              <h2>Leading Computer Institute in Dhurwa, Ranchi Since 2013</h2>
+              <p>
+                RPS Group of Institutions is a trusted computer training
+                institute in Dhurwa, Ranchi, established in September 2013. With
+                over 10 years of experience, we have trained hundreds of
+                students from Dhurwa, Ranchi, and across Jharkhand for
+                government jobs, private sector employment, and higher education
+                in computer applications.
+              </p>
+              <p>
+                Our institute is known for its practical approach, Hindi &
+                English medium teaching, experienced faculty, and job-oriented
+                curriculum. We have two conveniently located branches in Dhurwa
+                — Anand Market Sector 1 and JP Market — making quality computer
+                education accessible to all students in Ranchi.
+              </p>
+              <p>
+                Whether you are a school student, college student, or a working
+                professional looking to upskill — RPS has a course designed for
+                your specific goal.
+              </p>
+            </div>
+            <div class="about-visual">
+              <div class="big-year">2013</div>
+              <p
+                style="font-size: 1.1rem; font-weight: 700; margin-bottom: 4px"
+              >
+                Established in Ranchi
+              </p>
+              <p style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 24px">
+                Dhurwa's most trusted computer institute
+              </p>
+              <div
+                style="
+                  border-top: 1px solid rgba(255, 255, 255, 0.15);
+                  padding-top: 20px;
+                  display: grid;
+                  grid-template-columns: 1fr 1fr;
+                  gap: 16px;
+                  text-align: center;
+                "
+              >
+                <div>
+                  <div
+                    style="
+                      font-family: &quot;Baloo 2&quot;, sans-serif;
+                      font-size: 2rem;
+                      font-weight: 800;
+                      color: var(--accent);
+                    "
+                  >
+                    20+
+                  </div>
+                  <div style="font-size: 0.82rem; opacity: 0.8">Courses</div>
+                </div>
+                <div>
+                  <div
+                    style="
+                      font-family: &quot;Baloo 2&quot;, sans-serif;
+                      font-size: 2rem;
+                      font-weight: 800;
+                      color: var(--accent);
+                    "
+                  >
+                    2
+                  </div>
+                  <div style="font-size: 0.82rem; opacity: 0.8">Branches</div>
+                </div>
+                <div>
+                  <div
+                    style="
+                      font-family: &quot;Baloo 2&quot;, sans-serif;
+                      font-size: 2rem;
+                      font-weight: 800;
+                      color: var(--accent);
+                    "
+                  >
+                    500+
+                  </div>
+                  <div style="font-size: 0.82rem; opacity: 0.8">Students</div>
+                </div>
+                <div>
+                  <div
+                    style="
+                      font-family: &quot;Baloo 2&quot;, sans-serif;
+                      font-size: 2rem;
+                      font-weight: 800;
+                      color: var(--accent);
+                    "
+                  >
+                    10+
+                  </div>
+                  <div style="font-size: 0.82rem; opacity: 0.8">Years</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section section-alt">
+        <div class="section-inner">
+          <div class="section-label">Our Mission</div>
+          <h2 class="section-title">What Makes RPS Different</h2>
+          <p class="section-sub">
+            We are not just a computer centre — we are a career launchpad for
+            students across Dhurwa, Ranchi, and Jharkhand.
+          </p>
+          <div class="values-grid">
+            <div class="value-card">
+              <h4>🏆 Established & Trusted</h4>
+              <p>
+                Operating since 2013 with a proven track record of student
+                success in Ranchi and Jharkhand. Hundreds of students placed in
+                government and private roles.
+              </p>
+            </div>
+            <div class="value-card">
+              <h4>📚 Broadest Course Catalogue</h4>
+              <p>
+                From BCA and PGDCA to Tally Prime GST, Python, Java, Shorthand,
+                and Typing — 20+ courses under one roof at Dhurwa Ranchi.
+              </p>
+            </div>
+            <div class="value-card">
+              <h4>🗣 Hindi & English Medium</h4>
+              <p>
+                All courses taught in both mediums — ideal for local Hindi
+                medium students and English medium learners. No student is left
+                behind.
+              </p>
+            </div>
+            <div class="value-card">
+              <h4>🏛 Government Job Focused</h4>
+              <p>
+                Typing, Shorthand, Steno, DOP, and Tally Prime GST courses
+                specifically designed for SSC, railways, and Jharkhand state
+                government exam preparation.
+              </p>
+            </div>
+            <div class="value-card">
+              <h4>📍 Two Convenient Branches</h4>
+              <p>
+                Anand Market Sector 1 and JP Market — both in Dhurwa, Ranchi,
+                easily reachable by auto and bus from all parts of Ranchi.
+              </p>
+            </div>
+            <div class="value-card">
+              <h4>💼 Placement Support</h4>
+              <p>
+                Active job referrals for accounts, data entry, office assistant,
+                and stenographer roles in Ranchi and Jharkhand after course
+                completion.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-inner">
+          <div class="section-label">All Courses</div>
+          <h2 class="section-title">Our Courses at a Glance</h2>
+          <p class="section-sub">
+            All courses available at both branches in Dhurwa, Ranchi. Hindi &
+            English medium. Morning & evening batches.
+          </p>
+          <div class="courses-tags">
+            <span>BCA</span><span>DCA</span><span>ADCA</span><span>PGDCA</span>
+            <span>Tally Prime GST</span><span>DTP</span><span>DOP</span>
+            <span>Python</span><span>Java</span><span>C</span><span>C++</span>
+            <span>SQL</span><span>C# & .NET</span>
+            <span>Shorthand Hindi/English</span
+            ><span>Typing Hindi/English</span> <span>Steno Course</span
+            ><span>11th & 12th Computer Science Tuition</span>
+          </div>
+          <div style="margin-top: 28px">
+            <button class="btn-primary" onclick="navigate('courses')">
+              View All Courses with Details →
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== CONTACT PAGE ===================== -->
+    <div class="page" id="page-contact">
+      <div class="page-hero">
+        <h1>
+          Contact RPS Group of Institutions — Computer Centre Dhurwa Ranchi
+        </h1>
+        <p>
+          Call or WhatsApp for course details, fees, batch timings, and
+          admission. Free demo class available. Same day admission.
+        </p>
+      </div>
+
+      <div class="section">
+        <div class="section-inner">
+          <div class="contact-grid">
+            <div class="contact-card">
+              <div class="contact-card-header">
+                <div class="branch-num">1</div>
+                <h3>Anand Market, Sector 1 — Branch 1</h3>
+              </div>
+              <div class="contact-card-body">
+                <div class="contact-detail">
+                  <span class="cd-icon">📍</span>
+                  <div>
+                    <h4>Address</h4>
+                    <p>
+                      Anand Market, Sector 1, Saily City Road, Near Hanuman
+                      Mandir, Dhurwa, Ranchi, Jharkhand 834004
+                    </p>
+                  </div>
+                </div>
+                <div class="contact-detail">
+                  <span class="cd-icon">📞</span>
+                  <div>
+                    <h4>Phone</h4>
+                    <p><a href="tel:+917549521981">7549521981</a></p>
+                  </div>
+                </div>
+                <div class="contact-detail">
+                  <span class="cd-icon">💬</span>
+                  <div>
+                    <h4>WhatsApp</h4>
+                    <p>
+                      <a href="https://wa.me/917549521981"
+                        >7549521981 — Chat Now</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="contact-detail">
+                  <span class="cd-icon">🕐</span>
+                  <div>
+                    <h4>Opening Hours</h4>
+                    <p>
+                      Mon–Sat: 8:00 AM – 7:00 PM<br />Sunday: 10:00 AM – 2:00 PM
+                    </p>
+                  </div>
+                </div>
+                <a
+                  href="https://wa.me/917549521981?text=I+want+to+enquire+about+courses+at+RPS+Anand+Market"
+                  class="btn-wa"
+                  style="width: 100%; justify-content: center"
+                  >💬 WhatsApp Branch 1</a
+                >
+                <div class="map-embed">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3663.7!2d85.2938!3d23.3441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDIwJzM4LjgiTiA4NcKwMTcnMzguMiJF!5e0!3m2!1sen!2sin!4v1"
+                    allowfullscreen=""
+                    loading="lazy"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-header">
+                <div class="branch-num">2</div>
+                <h3>JP Market, CTI Colony — Branch 2</h3>
+              </div>
+              <div class="contact-card-body">
+                <div class="contact-detail">
+                  <span class="cd-icon">📍</span>
+                  <div>
+                    <h4>Address</h4>
+                    <p>
+                      JP Market Road, CTI Colony, Sector 4, Near Saraswati
+                      School, Dhurwa, Ranchi, Jharkhand 834004
+                    </p>
+                  </div>
+                </div>
+                <div class="contact-detail">
+                  <span class="cd-icon">📞</span>
+                  <div>
+                    <h4>Phone</h4>
+                    <p><a href="tel:+919546079914">9546079914</a></p>
+                  </div>
+                </div>
+                <div class="contact-detail">
+                  <span class="cd-icon">💬</span>
+                  <div>
+                    <h4>WhatsApp</h4>
+                    <p>
+                      <a href="https://wa.me/919546079914"
+                        >9546079914 — Chat Now</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="contact-detail">
+                  <span class="cd-icon">🕐</span>
+                  <div>
+                    <h4>Opening Hours</h4>
+                    <p>
+                      Mon–Sat: 8:00 AM – 7:00 PM<br />Sunday: 10:00 AM – 2:00 PM
+                    </p>
+                  </div>
+                </div>
+                <a
+                  href="https://wa.me/919546079914?text=I+want+to+enquire+about+courses+at+RPS+JP+Market"
+                  class="btn-wa"
+                  style="width: 100%; justify-content: center"
+                  >💬 WhatsApp Branch 2</a
+                >
+                <div class="map-embed">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3663.9!2d85.2850!3d23.3410!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDIwJzI3LjYiTiA4NcKwMTcnMDYuMCJF!5e0!3m2!1sen!2sin!4v2"
+                    allowfullscreen=""
+                    loading="lazy"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="demo-banner">
+            <h3>🎯 Free Demo Class Available at Both Branches</h3>
+            <p>
+              Not sure which course is right for you? Visit either branch or
+              WhatsApp us. Our faculty will guide you to the best course based
+              on your qualification, goals, and budget. Same day admission
+              available.
+            </p>
+            <div class="cta-group" style="justify-content: center">
+              <a
+                href="https://wa.me/917549521981"
+                class="btn-primary"
+                style="background: white; color: #16a34a"
+                >💬 Branch 1 — 7549521981</a
+              >
+              <a
+                href="https://wa.me/919546079914"
+                class="btn-primary"
+                style="background: white; color: #16a34a"
+                >💬 Branch 2 — 9546079914</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              RPS Group of Institutions <span>Computer Centre</span>
+            </div>
+            <p>
+              Leading computer training institute in Dhurwa, Ranchi since 2013.
+              20+ job-oriented courses. Hindi & English medium. Two branches.
+              Placement support for government and private jobs in Jharkhand.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a onclick="navigate('home')">Home</a></li>
+              <li><a onclick="navigate('courses')">All Courses</a></li>
+              <li><a onclick="navigate('about')">About Us</a></li>
+              <li><a onclick="navigate('contact')">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Popular Courses</h4>
+            <ul>
+              <li><a onclick="navigate('courses')">BCA Course Ranchi</a></li>
+              <li><a onclick="navigate('courses')">PGDCA Course Ranchi</a></li>
+              <li>
+                <a onclick="navigate('courses')">Tally Prime GST Ranchi</a>
+              </li>
+              <li>
+                <a onclick="navigate('courses')">Typing Classes Ranchi</a>
+              </li>
+              <li>
+                <a onclick="navigate('courses')">Shorthand Course Ranchi</a>
+              </li>
+              <li>
+                <a onclick="navigate('courses')">Python Classes Ranchi</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            © 2025 RPS Group of Institutions — Computer Centre, Dhurwa, Ranchi,
+            Jharkhand 834004 | Branch 1: 7549521981 | Branch 2: 9546079914
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function navigate(page) {
+        document
+          .querySelectorAll(".page")
+          .forEach((p) => p.classList.remove("active"));
+        document
+          .querySelectorAll(".nav-links button")
+          .forEach((b) => b.classList.remove("active"));
+        document.getElementById("page-" + page).classList.add("active");
+        document.getElementById("nav-" + page).classList.add("active");
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
+      function toggleMenu() {
+        const menu = document.getElementById("mobile-menu");
+        menu.classList.toggle("open");
+      }
+    </script>
+  </body>
+</html>
